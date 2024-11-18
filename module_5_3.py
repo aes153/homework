@@ -67,7 +67,7 @@ print(h1 == h2)
 h1 = 10 + h1    #__radd__
 print(h1)
 
-h2 += 10
+h2 += 10       #__iadd__
 print(h2)
 
 print(h1 > h2)   #__gt__
