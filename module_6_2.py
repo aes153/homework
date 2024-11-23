@@ -19,7 +19,6 @@ class Vehicle:
         print(f'Модель: {self.__model}\n Мощность: {self.__engine_power}\n Цвет: {self.__color}\n Владелец: {self.owner}\n')
 
     def set_color(self, new_color):
-        # self.new_color = new_color.lower
         if new_color.lower() in (color.lower() for color in self.__COLOR_VARIANTS):
             self.__color = new_color
         else:
@@ -29,9 +28,6 @@ class Vehicle:
 class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
     pass
-
-
-# __COLOR_VARIANTS = ['red', 'white', 'brown', 'blue', 'black']
 
 vehicle1 = Sedan('Mary', 'Mercedes-Benz EQE', 408, 'blue')
 vehicle1.print_info()
