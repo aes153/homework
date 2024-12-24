@@ -52,7 +52,6 @@ class Duckbill(Bird, AquaticAnimal, PoisonousAnimal):
     def __init__(self, speed):
         super().__init__(speed)
 
-# Пример использования
 db = Duckbill(10)
 print(db.live)
 print(db.beak)
